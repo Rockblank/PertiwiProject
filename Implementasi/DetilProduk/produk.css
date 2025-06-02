@@ -1,0 +1,266 @@
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container for product details */
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Product image gallery */
+.product-gallery {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.product-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Product info section */
+.product-info {
+  padding: 1rem 0;
+}
+
+/* Tags container */
+.tags-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #d9e6d1;
+  color: #5a7c5a;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+}
+
+/* Product title */
+.product-title {
+  font-size: 1.5rem;
+  color: #2d4a2d;
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+/* Product price */
+.product-price {
+  font-size: 1.75rem;
+  color: #2d4a2d;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Share and favorite buttons */
+.action-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.icon-btn {
+  background-color: #a3c1a3;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-btn:hover {
+  background-color: #8bb18b;
+}
+
+/* Main action buttons container */
+.main-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 0;
+}
+
+.add-to-cart {
+  background-color: #d9e6d1;
+  color: #5a7c5a;
+}
+
+.buy-now {
+  background-color: #5a7c5a;
+}
+
+/* Product details section */
+.product-details {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.details-title {
+  font-size: 1.25rem;
+  color: #2d4a2d;
+  margin-bottom: 1rem;
+}
+
+.details-content {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+/* Mobile First Approach */
+@media (max-width: 639px) {
+  .product-container {
+    padding: 15px;
+  }
+
+  .product-title {
+    font-size: 1.25rem;
+  }
+
+  .product-price {
+    font-size: 1.5rem;
+  }
+
+  .main-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .product-container {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .product-gallery {
+    margin-bottom: 1.5rem;
+  }
+
+  .product-gallery img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 0;
+  }
+
+  .main-actions {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+
+  .action-btn {
+    margin: 0;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+
+  .buy-now {
+    width: 100%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .product-gallery {
+    margin-bottom: 0;
+  }
+
+  .product-info {
+    padding: 0 0 0 20px;
+  }
+
+  .product-title {
+    font-size: 1.75rem;
+  }
+
+  .product-price {
+    font-size: 2rem;
+  }
+
+  .main-actions {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+}
+
+/* Utility classes */
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
+}

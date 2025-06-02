@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Pertiwi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the external CSS file -->
+  </head>
+  <body class="bg-[#f0f4e6] font-serif text-[#4f6d4f]">
+    <!-- Navbar -->
+    <nav
+      class="navbar bg-[#5f7f5f] flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 mb-4"
+    >
+      <div class="flex items-center space-x-2">
+        <a
+          href="index.html"
+          class="text-white text-xl sm:text-2xl font-serif tracking-wide select-none"
+          >Pertiwi</a
+        >
+      </div>
+      <form
+        class="search-form flex items-center flex-1 max-w-md mx-4 sm:mx-6 md:mx-10"
+      >
+        <input
+          class="flex-grow rounded-full py-2 px-4 text-[#a3a3a3] text-sm sm:text-base font-serif focus:outline-none"
+          placeholder="Search"
+          type="search"
+        />
+        <button class="ml-2 text-[#a3a3a3]" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div class="nav-icons flex items-center space-x-3">
+        <button
+          class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button
+          class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]"
+        >
+          <i class="fas fa-envelope"></i>
+        </button>
+        <button
+          class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]"
+        >
+          <i class="fas fa-heart"></i>
+        </button>
+        <button
+          class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]"
+        >
+          <i class="fas fa-bell"></i>
+        </button>
+        <div
+          class="profile-button bg-white rounded-full flex items-center space-x-2 px-3 py-1"
+        >
+          <a href="../Akun/akun.html" class="flex items-center space-x-2">
+            <i class="fas fa-user-circle text-lg"></i>
+            <div class="profile-info leading-tight">
+              <div class="font-semibold">Bruno</div>
+              <div class="text-[8px] sm:text-[10px]">Seller</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div class="wrapper">
+      <div class="slides">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+
+        <div class="images">
+          <img
+            src="WhatsApp Image 2025-05-30 at 18.31.55_8622e930.jpg"
+            alt="image 1"
+          />
+          <img
+            src="WhatsApp Image 2025-05-30 at 18.32.13_ec982080.jpg"
+            alt="image 2"
+          />
+          <img
+            src="WhatsApp Image 2025-05-30 at 18.32.33_596b37e2.jpg"
+            alt="image 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="navigation">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+    </div>
+
+    <!-- Info Cards -->
+    <section
+      class="info-section bg-[#b1b680] rounded-tl-3xl rounded-tr-3xl p-4 sm:p-6 md:p-10 flex flex-col sm:flex-row justify-center gap-6 max-w-[1200px] mx-auto mt-4"
+    >
+      <article
+        class="info-article bg-[#5f7f5f] rounded-xl p-4 sm:p-6 max-w-xs shadow-lg flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
+      >
+        <img
+          class="article-image rounded-lg w-[120px] h-[100px] object-cover flex-shrink-0"
+          alt="Blue and green recycled plastic bottles stacked"
+          height="100"
+          src="https://storage.googleapis.com/a1aa/image/b16cb802-f4f0-4a50-cdb0-dfd5bba5f6b7.jpg"
+          width="120"
+        />
+        <div
+          class="text-white text-xs sm:text-sm font-serif flex flex-col justify-between"
+        >
+          <h3 class="font-semibold text-base sm:text-lg mb-1">
+            Recycled Product
+          </h3>
+          <p class="mb-3 leading-tight">
+            Eco-friendly products made from recycled materials, helping reduce
+            waste and support a sustainable lifestyle.
+          </p>
+          <button
+            class="bg-white text-[#5f7f5f] rounded-full px-4 py-1 text-xs sm:text-sm font-serif w-max hover:bg-[#d9e6c2] transition"
+          >
+            See more ...
+          </button>
+        </div>
+      </article>
+      <article
+        class="info-article bg-[#5f7f5f] rounded-xl p-4 sm:p-6 max-w-xs shadow-lg flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
+      >
+        <img
+          class="article-image rounded-lg w-[120px] h-[100px] object-cover flex-shrink-0"
+          alt="Two models wearing eco-friendly fashion clothing"
+          height="100"
+          src="https://storage.googleapis.com/a1aa/image/17cd71ac-03ab-4bb0-8fd5-8e83c4a4efde.jpg"
+          width="120"
+        />
+        <div
+          class="text-white text-xs sm:text-sm font-serif flex flex-col justify-between"
+        >
+          <h3 class="font-semibold text-base sm:text-lg mb-1">Eco-Fashion</h3>
+          <p class="mb-3 leading-tight">
+            A clothing lifestyle inspired by environmental awareness, focusing
+            on sustainable materials and ethical production practices.
+          </p>
+          <button
+            class="bg-white text-[#5f7f5f] rounded-full px-4 py-1 text-xs sm:text-sm font-serif w-max hover:bg-[#d9e6c2] transition"
+          >
+            See more ...
+          </button>
+        </div>
+      </article>
+      <article
+        class="info-article bg-[#5f7f5f] rounded-xl p-4 sm:p-6 max-w-xs shadow-lg flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
+      >
+        <img
+          class="article-image rounded-lg w-[120px] h-[100px] object-cover flex-shrink-0"
+          alt="Person signing a quality assurance checklist"
+          height="100"
+          src="https://storage.googleapis.com/a1aa/image/e89a696e-eeba-47e7-b6d7-a644e8f73d8f.jpg"
+          width="120"
+        />
+        <div
+          class="text-white text-xs sm:text-sm font-serif flex flex-col justify-between"
+        >
+          <h3 class="font-semibold text-base sm:text-lg mb-1">
+            Assured Quality
+          </h3>
+          <p class="mb-3 leading-tight">
+            Pertiwi ensures every eco-friendly product we offer is carefully
+            curated for quality, ethics, and sustainability.
+          </p>
+          <button
+            class="bg-white text-[#5f7f5f] rounded-full px-4 py-1 text-xs sm:text-sm font-serif w-max hover:bg-[#d9e6c2] transition"
+          >
+            See more ...
+          </button>
+        </div>
+      </article>
+    </section>
+    <!-- Main Content -->
+    <main
+      class="main-content max-w-[1200px] mx-auto mt-8 px-4 sm:px-6 md:px-10 flex flex-col md:flex-row gap-6"
+    >
+      <!-- Left Sidebar -->
+      <aside
+        class="sidebar bg-[#a9bb8a] rounded-xl p-6 max-w-xs shadow-lg text-white font-serif text-sm leading-relaxed select-none"
+      >
+        <h2 class="font-semibold text-lg mb-4">Kategori Produk</h2>
+        <ol class="list-decimal list-inside space-y-1">
+          <li>Produk Rumah Tangga</li>
+          <li>Peralatan Dapur</li>
+          <li>Pakaian dan Tekstil</li>
+          <li>Produk Perawatan Diri</li>
+          <li>Produk Elektronik dan Energi</li>
+          <li>Kebutuhan Kantor &amp; Sekolah</li>
+          <li>Produk Anak &amp; Bayi</li>
+          <li>Produk Kebun &amp; Pertanian</li>
+          <li>Transportasi &amp; Aksesoris</li>
+          <li>Dekorasi &amp; Furnitur</li>
+        </ol>
+      </aside>
+      <!-- Recommended Products -->
+      <section class="flex-1 flex flex-col">
+        <h2 class="font-semibold text-lg mb-4 select-none">
+          Recomended Products
+        </h2>
+        <div
+          class="product-grid flex flex-wrap gap-6 overflow-y-auto max-h-[320px] scrollbar-thin pr-2"
+        >
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <a href="../DetilProduk/detilProd.html">
+              <img
+                alt="Placeholder image for ReBottle product"
+                class="rounded-lg mb-2 w-full object-cover"
+                height="120"
+                src="https://storage.googleapis.com/a1aa/image/997052e7-1366-4676-02cc-c0e35407ccff.jpg"
+                width="120"
+              />
+              <h3 class="text-xs font-serif mb-1">ReBottle</h3>
+              <p class="font-bold text-sm">Rp. 10.000,00</p>
+            </a>
+          </article>
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <img
+              alt="Placeholder image for EcoTolle product"
+              class="rounded-lg mb-2 w-full object-cover"
+              height="120"
+              src="https://storage.googleapis.com/a1aa/image/b3238c93-6ee7-4fdd-2397-d0912d3c238e.jpg"
+              width="120"
+            />
+            <h3 class="text-xs font-serif mb-1">EcoTolle</h3>
+            <p class="font-bold text-sm">Rp. 20.000,00</p>
+          </article>
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <img
+              alt="Placeholder image for PaperLife product"
+              class="rounded-lg mb-2 w-full object-cover"
+              height="120"
+              src="https://storage.googleapis.com/a1aa/image/85b6d029-d163-4280-0410-78f0b31049d2.jpg"
+              width="120"
+            />
+            <h3 class="text-xs font-serif mb-1">PaperLife</h3>
+            <p class="font-bold text-sm">Rp. 5.000,00</p>
+          </article>
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <img
+              alt="Placeholder image for Repap product"
+              class="rounded-lg mb-2 w-full object-cover"
+              height="120"
+              src="https://storage.googleapis.com/a1aa/image/23fd72f5-629a-4add-9a55-ef7d8f846bea.jpg"
+              width="120"
+            />
+            <h3 class="text-xs font-serif mb-1">Repap</h3>
+            <p class="font-bold text-sm">Rp. 11.000,00</p>
+          </article>
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <img
+              alt="Placeholder image for ReMetal product"
+              class="rounded-lg mb-2 w-full object-cover"
+              height="120"
+              src="https://storage.googleapis.com/a1aa/image/e03d56a8-a570-49c0-5711-59294fc8a374.jpg"
+              width="120"
+            />
+            <h3 class="text-xs font-serif mb-1">ReMetal</h3>
+            <p class="font-bold text-sm">Rp. 19.000,00</p>
+          </article>
+          <article
+            class="product-card bg-[#d9e6c2] rounded-xl p-3 w-[140px] flex flex-col items-start shadow-md"
+          >
+            <img
+              alt="Placeholder image for Recloth product"
+              class="rounded-lg mb-2 w-full object-cover"
+              height="120"
+              src="https://storage.googleapis.com/a1aa/image/b36701a3-aa09-4f85-e54c-ecb704574c2c.jpg"
+              width="120"
+            />
+            <h3 class="text-xs font-serif mb-1">Recloth</h3>
+            <p class="font-bold text-sm">Rp. 10.000,00</p>
+          </article>
+        </div>
+        <a
+          class="mt-3 text-xs font-serif font-semibold underline select-none"
+          href="#"
+          >See More ...</a
+        >
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-[#5f7f5f] mt-10 rounded-t-3xl p-6 sm:p-10 max-w-[1200px] mx-auto text-white font-serif text-xs sm:text-sm"
+    >
+      <div class="footer-grid grid grid-cols-1 sm:grid-cols-4 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">Pertiwi</h3>
+          <ul class="space-y-1">
+            <li>Pertiwi Marketing Solutions</li>
+            <li>Pertiwi Affiliate Program</li>
+            <li>About Pertiwi</li>
+            <li>Carier</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Buy</h3>
+          <ul class="space-y-1">
+            <li>Bill &amp; Top Up</li>
+            <li>Pertiwi COD</li>
+            <li>Free Shipping</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Sell</h3>
+          <ul class="space-y-1">
+            <li>Seller Education Center</li>
+            <li>Mall List</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Help and assistance</h3>
+          <ul class="space-y-1">
+            <li>Terms and Conditions</li>
+            <li>Pertiwi Care</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
