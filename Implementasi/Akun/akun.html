@@ -1,168 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Pertiwi Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="akunn.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="nav-container">
-      <a href="../../index.html" class="logo">Pertiwi</a>
-      <div class="search-container">
-        <input type="search" class="search-bar" placeholder="Search" />
-        <button class="search-icon">
-          <i class="fas fa-search"></i>
-        </button>
-      </div>
-      <div class="nav-icons">
-        <button class="icon-btn">
-          <i class="fas fa-shopping-cart"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fas fa-envelope"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fas fa-heart"></i>
-        </button>
-        <button class="icon-btn">
-          <i class="fas fa-bell"></i>
-        </button>
-      </div>
-      <button class="profile-btn">
-        <a href="akun.html" class="flex items-center">
-          <i class="fas fa-user-circle"></i>
-          <span>Bruno</span>
-        </a>
-      </button>
-    </nav>
 
-    <!-- Mobile Search -->
-    <div class="mobile-search-container">
-      <input type="search" class="search-bar" placeholder="Search" />
-      <button class="search-icon">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Pertiwi Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="akunn.css" />
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="../../style.css" />
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar bg-[#5f7f5f] flex items-center justify-between px-4 sm:px-6 md:px-10 py-3 mb-4">
+    <div class="flex items-center space-x-2">
+      <a href="../../index.html" class="text-white text-xl sm:text-2xl font-serif tracking-wide select-none">Pertiwi</a>
+    </div>
+    <form class="search-form flex items-center flex-1 max-w-md mx-4 sm:mx-6 md:mx-10">
+      <input class="flex-grow rounded-full py-2 px-4 text-[#a3a3a3] text-sm sm:text-base font-serif focus:outline-none"
+        placeholder="Search" type="search" />
+      <button class="ml-2 text-[#a3a3a3]" type="submit">
         <i class="fas fa-search"></i>
       </button>
+    </form>
+    <div class="nav-icons flex items-center space-x-3">
+      <button class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+      <button class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <button class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]">
+        <i class="fas fa-heart"></i>
+      </button>
+      <button class="nav-button bg-white rounded-full w-9 h-9 flex items-center justify-center text-[#5f7f5f]">
+        <i class="fas fa-bell"></i>
+      </button>
+      <div class="profile-button bg-white rounded-full flex items-center space-x-2 px-3 py-1">
+        <a href="akun.html" class="flex items-center space-x-2">
+          <i class="fas fa-user-circle text-lg"></i>
+          <div class="profile-info leading-tight">
+            <div class="font-semibold">Bruno</div>
+            <div class="text-[8px] sm:text-[10px]">Seller</div>
+          </div>
+        </a>
+      </div>
     </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="main-container">
-      <div class="profile-content">
-        <!-- Profile Info Section -->
-        <div class="profile-info-section">
-          <div class="profile-header">
-            <h1>Bruno Davinci</h1>
+  <!-- Mobile Search -->
+  <div class="mobile-search-container">
+    <input type="search" class="search-bar" placeholder="Search" />
+    <button class="search-icon">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div class="profile-content">
+      <!-- Profile Info Section -->
+      <div class="profile-info-section">
+        <div class="profile-header">
+          <h1>Bruno Davinci</h1>
+          <button class="edit-btn">
+            <i class="fas fa-edit"></i>
+          </button>
+        </div>
+
+        <div class="info-cards">
+          <!-- Personal Bio Card -->
+          <div class="info-card bio-card">
+            <h2>Personal Bio</h2>
+            <div class="bio-details">
+              <div class="bio-item">
+                <span class="label">Date of Birth</span>
+                <span class="value">February 29, 2000</span>
+              </div>
+              <div class="bio-item">
+                <span class="label">Gender</span>
+                <span class="value">Male</span>
+              </div>
+              <div class="bio-item">
+                <span class="label">Address</span>
+                <span class="value">Jl. Veteran, Malang</span>
+              </div>
+              <div class="bio-item">
+                <span class="label">Country</span>
+                <span class="value">Indonesia</span>
+              </div>
+            </div>
             <button class="edit-btn">
               <i class="fas fa-edit"></i>
             </button>
           </div>
 
-          <div class="info-cards">
-            <!-- Personal Bio Card -->
-            <div class="info-card bio-card">
-              <h2>Personal Bio</h2>
-              <div class="bio-details">
-                <div class="bio-item">
-                  <span class="label">Date of Birth</span>
-                  <span class="value">February 29, 2000</span>
-                </div>
-                <div class="bio-item">
-                  <span class="label">Gender</span>
-                  <span class="value">Male</span>
-                </div>
-                <div class="bio-item">
-                  <span class="label">Address</span>
-                  <span class="value">Jl. Veteran, Malang</span>
-                </div>
-                <div class="bio-item">
-                  <span class="label">Country</span>
-                  <span class="value">Indonesia</span>
-                </div>
-              </div>
-              <button class="edit-btn">
-                <i class="fas fa-edit"></i>
-              </button>
+          <!-- Contact Info Card -->
+          <div class="info-card">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <span class="value">brunodavinci99@gmail.com</span>
             </div>
-
-            <!-- Contact Info Card -->
-            <div class="info-card">
-              <div class="contact-item">
-                <span class="label">Email</span>
-                <span class="value">brunodavinci99@gmail.com</span>
-              </div>
-              <div class="contact-item">
-                <span class="label">Number phone</span>
-                <span class="value">0812653357213</span>
-              </div>
-              <div class="contact-item">
-                <span class="label">Account number</span>
-                <span class="value">827182831278313</span>
-              </div>
+            <div class="contact-item">
+              <span class="label">Number phone</span>
+              <span class="value">0812653357213</span>
+            </div>
+            <div class="contact-item">
+              <span class="label">Account number</span>
+              <span class="value">827182831278313</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Profile Image Section -->
-        <div class="profile-image-section">
-          <div class="profile-image">
-            <i class="fas fa-user text-gray-300 text-6xl"></i>
-          </div>
-          <button class="select-photo-btn">Select Photo</button>
-          <div class="profile-actions">
-            <button class="action-btn">Change Password</button>
-            <button class="action-btn">PIN Pertiwi</button>
-          </div>
+      <!-- Profile Image Section -->
+      <div class="profile-image-section">
+        <div class="profile-image">
+          <i class="fas fa-user text-gray-300 text-6xl"></i>
+        </div>
+        <button class="select-photo-btn">Select Photo</button>
+        <div class="profile-actions">
+          <button class="action-btn">Change Password</button>
+          <button class="action-btn">PIN Pertiwi</button>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Pertiwi</h3>
-          <ul>
-            <li>Pertiwi Marketing Solutions</li>
-            <li>Pertiwi Affiliate Program</li>
-            <li>About Pertiwi</li>
-            <li>Career</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Buy</h3>
-          <ul>
-            <li>Bill & Top Up</li>
-            <li>Pertiwi COD</li>
-            <li>Free Shipping</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Sell</h3>
-          <ul>
-            <li>Seller Education Center</li>
-            <li>Mall List</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Help and assistance</h3>
-          <ul>
-            <li>Terms and Conditions</li>
-            <li>Pertiwi Care</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Pertiwi</h3>
+        <ul>
+          <li>Pertiwi Marketing Solutions</li>
+          <li>Pertiwi Affiliate Program</li>
+          <li>About Pertiwi</li>
+          <li>Career</li>
+          <li>Blog</li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-section">
+        <h3>Buy</h3>
+        <ul>
+          <li>Bill & Top Up</li>
+          <li>Pertiwi COD</li>
+          <li>Free Shipping</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Sell</h3>
+        <ul>
+          <li>Seller Education Center</li>
+          <li>Mall List</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Help and assistance</h3>
+        <ul>
+          <li>Terms and Conditions</li>
+          <li>Pertiwi Care</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
